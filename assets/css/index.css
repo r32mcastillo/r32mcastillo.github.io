@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+  --blue: #81ccf1;
+  --yellow: #efc66a;
+  --pink: #d8a6cb;
+  --dark-pink: #c59ece;
+  --purple: #9996cb;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to right bottom, #051937, #10213a, #1b293d, #26313f, #323941);
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  height: 100vh;
+}
+pre{color:#fff}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #fff;
+}
