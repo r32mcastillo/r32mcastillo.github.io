@@ -13,6 +13,7 @@ body {
   background-image: linear-gradient(to right bottom, #051937, #10213a, #1b293d, #26313f, #323941);
   margin: 0;
   height: 100vh;
+  color: #fff;
 }
 
 .container {
@@ -20,11 +21,18 @@ body {
   grid-template: repeat(10, 1fr) / repeat(10, 1fr);
   height: 100vh;
 }
-pre{color:#fff}
+pre{
+  color:#fff;
+  font-size: 15px;
+}
 a,
 a:link,
 a:visited,
 a:hover,
 a:active {
     color: #fff;
+    text-decoration: none;
+}
+.user{
+  grid-column-start:-1;
 }
