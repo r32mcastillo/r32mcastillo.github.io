@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-:root {
-  --blue: #81ccf1;
-  --yellow: #efc66a;
-  --pink: #d8a6cb;
-  --dark-pink: #c59ece;
-  --purple: #9996cb;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(to right bottom, #051937, #10213a, #1b293d, #26313f, #323941);
@@ -17,9 +9,27 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
   height: 100vh;
+  display: grid;
+  grid-template-columns: 50% minmax(455px, 455px) ;
+  justify-content: space-between;
+  grid-template-areas: "code user";
+}
+@media (max-width: 800px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-areas: "user "
+                          "code";
+    grid-template-rows: 300px auto;
+  }
+}
+.code{
+  grid-area: code;
+}
+.user{
+  grid-area: user;
 }
 pre{
   color:#fff;
@@ -32,7 +42,4 @@ a:hover,
 a:active {
     color: #fff;
     text-decoration: none;
-}
-.user{
-  grid-column-start:-1;
 }
